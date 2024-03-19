@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    1% {
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOutToBottom {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        transform: translateY(20%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
